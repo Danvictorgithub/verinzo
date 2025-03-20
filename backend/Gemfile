@@ -48,5 +48,4 @@ end
 gem "solargraph", require: false, group: :development
 gem "solargraph-rails", require: false, group: :development
 gem "devise", "~> 4.9"
-
 gem "devise-jwt", "~> 0.12.1"
