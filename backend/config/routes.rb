@@ -6,10 +6,7 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   scope :api, defaults: { format: :json } do
-    devise_for :users, controllers: {
-      registrations: "devise/registrations",
-      sessions: "devise/sessions"
-    }
+    devise_for :users
 
     devise_scope :user do
       scope :auth do
