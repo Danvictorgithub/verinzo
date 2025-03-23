@@ -140,27 +140,27 @@
 <div class="flex min-h-screen flex-col">
 	<!-- Navigation -->
 	<header
-		class="bg-white/80/80 sticky top-0 z-50 w-full shadow-sm backdrop-blur-md transition-all duration-200"
+		class="sticky top-0 z-50 w-full bg-white/80 shadow-sm backdrop-blur-md transition-all duration-200"
 	>
 		<div class="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
 			<a href="/" class="flex items-center gap-2">
 				<span
-					class="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-2xl font-bold text-transparent"
+					class="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-2xl font-bold text-transparent"
 				>
 					Verinzo
 				</span>
 			</a>
 			<nav class="hidden gap-6 md:flex">
-				<a href="/courses" class="text-sm font-medium transition-colors hover:text-blue-600">
+				<a href="/courses" class="text-sm font-medium transition-colors hover:text-red-600">
 					Courses
 				</a>
-				<a href="/curriculum" class="text-sm font-medium transition-colors hover:text-blue-600">
+				<a href="/curriculum" class="text-sm font-medium transition-colors hover:text-red-600">
 					Curriculum
 				</a>
-				<a href="/community" class="text-sm font-medium transition-colors hover:text-blue-600">
+				<a href="/community" class="text-sm font-medium transition-colors hover:text-red-600">
 					Community
 				</a>
-				<a href="/about" class="text-sm font-medium transition-colors hover:text-blue-600">
+				<a href="/about" class="text-sm font-medium transition-colors hover:text-red-600">
 					About
 				</a>
 			</nav>
@@ -173,7 +173,7 @@
 				</a>
 				<a
 					href="/signup"
-					class="rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700"
+					class="rounded-md bg-red-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-red-700"
 				>
 					Sign up
 				</a>
@@ -193,16 +193,16 @@
 		{#if isMenuOpen}
 			<div class="border-t bg-white md:hidden">
 				<div class="container mx-auto flex flex-col gap-4 px-4 py-4">
-					<a href="/courses" class="text-lg font-medium transition-colors hover:text-blue-600">
+					<a href="/courses" class="text-lg font-medium transition-colors hover:text-red-600">
 						Courses
 					</a>
-					<a href="/curriculum" class="text-lg font-medium transition-colors hover:text-blue-600">
+					<a href="/curriculum" class="text-lg font-medium transition-colors hover:text-red-600">
 						Curriculum
 					</a>
-					<a href="/community" class="text-lg font-medium transition-colors hover:text-blue-600">
+					<a href="/community" class="text-lg font-medium transition-colors hover:text-red-600">
 						Community
 					</a>
-					<a href="/about" class="text-lg font-medium transition-colors hover:text-blue-600">
+					<a href="/about" class="text-lg font-medium transition-colors hover:text-red-600">
 						About
 					</a>
 					<div class="mt-4 flex flex-col gap-2">
@@ -214,7 +214,7 @@
 						</a>
 						<a
 							href="/signup"
-							class="w-full rounded-md bg-blue-600 px-4 py-2 text-center text-white transition-colors hover:bg-blue-700"
+							class="w-full rounded-md bg-red-600 px-4 py-2 text-center text-white transition-colors hover:bg-red-700"
 						>
 							Sign up
 						</a>
@@ -229,14 +229,14 @@
 		<section class="relative overflow-hidden bg-slate-950 py-20 text-white md:py-28">
 			<!-- Background gradient -->
 			<div
-				class="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-slate-950 to-slate-950"
+				class="absolute inset-0 bg-gradient-to-br from-red-600/20 via-slate-950 to-slate-950"
 			></div>
 
 			<!-- Animated code lines (decorative) -->
 			<div class="absolute inset-0 opacity-10">
 				{#each Array(20) as _, i}
 					<div
-						class="absolute h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"
+						class="absolute h-px bg-gradient-to-r from-transparent via-red-500/50 to-transparent"
 						style="top: {Math.random() * 100}%; left: 0; right: 0; opacity: {Math.random() * 0.5 +
 							0.25}; transform: translateY({Math.random() *
 							10}px); animation: pulse {Math.random() * 5 + 5}s infinite"
@@ -248,7 +248,7 @@
 				<div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
 					<div class="flex flex-col space-y-6">
 						<h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-							Learn to <span class="text-blue-500">Code</span> by Building Real Projects
+							Learn to <span class="text-red-500">Code</span> by Building Real Projects
 						</h1>
 						<p class="max-w-[600px] text-xl text-slate-300">
 							Verinzo provides a free, comprehensive curriculum to help you learn web development
@@ -256,22 +256,22 @@
 						</p>
 						<div class="space-y-3">
 							<div class="flex items-center gap-2">
-								<span class="text-blue-500">✓</span>
+								<span class="text-red-500">✓</span>
 								<span>100% free and open-source curriculum</span>
 							</div>
 							<div class="flex items-center gap-2">
-								<span class="text-blue-500">✓</span>
+								<span class="text-red-500">✓</span>
 								<span>Project-based learning approach</span>
 							</div>
 							<div class="flex items-center gap-2">
-								<span class="text-blue-500">✓</span>
+								<span class="text-red-500">✓</span>
 								<span>Active community of learners and mentors</span>
 							</div>
 						</div>
 						<div class="flex flex-col gap-4 pt-4 sm:flex-row">
 							<a
 								href="/get-started"
-								class="rounded-full bg-blue-600 px-6 py-3 text-center font-medium text-white transition-colors hover:bg-blue-700"
+								class="rounded-full bg-red-600 px-6 py-3 text-center font-medium text-white transition-colors hover:bg-red-700"
 							>
 								Get Started
 							</a>
@@ -303,152 +303,11 @@
 			</div>
 		</section>
 
-		<!-- Features Section -->
-		<section class="bg-white py-16">
-			<div class="container mx-auto px-4 md:px-6">
-				<div class="mb-12 flex flex-col items-center justify-center space-y-4 text-center">
-					<span class="rounded-full border border-gray-200 px-3 py-1 text-sm">Features</span>
-					<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-						Why Choose Verinzo
-					</h2>
-					<p class="max-w-[700px] text-gray-500 md:text-xl">
-						Our platform is designed to provide you with the best learning experience
-					</p>
-				</div>
-				<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-					{#each features as feature}
-						<div class="overflow-hidden rounded-lg border transition-all hover:shadow-lg">
-							<div class="p-6 pb-2">
-								<div class="mb-4 text-3xl text-blue-600">
-									{feature.icon}
-								</div>
-								<h3 class="mb-1 text-xl font-semibold">{feature.title}</h3>
-								<p class="mb-4 text-sm text-gray-500">{feature.description}</p>
-							</div>
-							<div class="px-6 pb-6">
-								<p class="text-sm text-gray-500">{feature.content}</p>
-							</div>
-						</div>
-					{/each}
-				</div>
-			</div>
-		</section>
-
-		<!-- Learning Paths Section -->
-		<section class="bg-slate-50 py-16">
-			<div class="container mx-auto px-4 md:px-6">
-				<div class="mb-12 flex flex-col items-center justify-center space-y-4 text-center">
-					<span class="rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800"
-						>Learning Paths</span
-					>
-					<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-						Choose Your Path
-					</h2>
-					<p class="max-w-[700px] text-gray-500 md:text-xl">
-						Structured learning paths to take you from beginner to professional developer
-					</p>
-				</div>
-				<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-					{#each courses as course}
-						<div class="overflow-hidden rounded-lg border transition-all hover:shadow-lg">
-							<div class="p-6 pb-2">
-								<div class="mb-4 text-3xl text-blue-600">
-									{course.icon}
-								</div>
-								<h3 class="mb-1 text-xl font-semibold">{course.title}</h3>
-								<p class="text-sm text-gray-500">{course.description}</p>
-							</div>
-							<div class="px-6 py-4">
-								<div class="mb-4 flex items-center gap-4 text-sm text-gray-500">
-									<div class="flex items-center gap-1">
-										<span class="text-gray-400">📚</span>
-										<span>{course.lessons} lessons</span>
-									</div>
-									<div class="flex items-center gap-1">
-										<span class="text-gray-400">⏱️</span>
-										<span>{course.duration}</span>
-									</div>
-								</div>
-								<span
-									class="inline-block rounded-full px-2 py-1 text-xs font-medium
-                  {course.level === 'Beginner'
-										? 'bg-green-100 text-green-800'
-										: course.level === 'Intermediate'
-											? 'bg-blue-100 text-blue-800'
-											: 'bg-purple-100 text-purple-800'}"
-								>
-									{course.level}
-								</span>
-							</div>
-							<div class="border-t bg-gray-50 px-6 pt-2 pb-6">
-								<a
-									href={`/courses/${course.title.toLowerCase().replace(/\s+/g, '-')}`}
-									class="block w-full rounded-md border border-gray-300 py-2 text-center transition-colors hover:bg-gray-100"
-								>
-									View Course
-								</a>
-							</div>
-						</div>
-					{/each}
-				</div>
-				<div class="mt-12 flex justify-center">
-					<a
-						href="/courses"
-						class="rounded-full bg-blue-600 px-6 py-3 text-center font-medium text-white transition-colors hover:bg-blue-700"
-					>
-						View All Courses
-					</a>
-				</div>
-			</div>
-		</section>
-
-		<!-- Stats Section -->
-		<section class="bg-slate-950 py-16 text-white">
-			<div class="container mx-auto px-4 md:px-6">
-				<div class="mb-12 flex flex-col items-center justify-center space-y-4 text-center">
-					<span class="rounded-full bg-blue-900/50 px-3 py-1 text-sm text-blue-300">Our Impact</span
-					>
-					<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-						Join Our Growing Community
-					</h2>
-					<p class="max-w-[700px] text-slate-300 md:text-xl">
-						Thousands of students have launched their tech careers with Verinzo
-					</p>
-				</div>
-				<div class="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-8">
-					<div
-						class="flex flex-col items-center justify-center rounded-lg border border-slate-800 bg-slate-900 p-6 text-center"
-					>
-						<div class="mb-2 text-4xl font-bold text-blue-500 md:text-5xl">50K+</div>
-						<p class="text-slate-300">Active Students</p>
-					</div>
-					<div
-						class="flex flex-col items-center justify-center rounded-lg border border-slate-800 bg-slate-900 p-6 text-center"
-					>
-						<div class="mb-2 text-4xl font-bold text-blue-500 md:text-5xl">200+</div>
-						<p class="text-slate-300">Coding Projects</p>
-					</div>
-					<div
-						class="flex flex-col items-center justify-center rounded-lg border border-slate-800 bg-slate-900 p-6 text-center"
-					>
-						<div class="mb-2 text-4xl font-bold text-blue-500 md:text-5xl">95%</div>
-						<p class="text-slate-300">Completion Rate</p>
-					</div>
-					<div
-						class="flex flex-col items-center justify-center rounded-lg border border-slate-800 bg-slate-900 p-6 text-center"
-					>
-						<div class="mb-2 text-4xl font-bold text-blue-500 md:text-5xl">12K+</div>
-						<p class="text-slate-300">Career Transitions</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
 		<!-- How It Works Section -->
 		<section class="bg-white py-16">
 			<div class="container mx-auto px-4 md:px-6">
 				<div class="mb-12 flex flex-col items-center justify-center space-y-4 text-center">
-					<span class="rounded-full border border-gray-200 px-3 py-1 text-sm">Process</span>
+					<span class="rounded-full bg-red-600 px-3 py-1 text-sm text-white">Our Process</span>
 					<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
 						How Verinzo Works
 					</h2>
@@ -459,8 +318,8 @@
 				<div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
 					<div class="rounded-lg border-none shadow-lg">
 						<div class="p-6 pb-2">
-							<div class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100">
-								<span class="text-xl text-blue-600">💻</span>
+							<div class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-red-100">
+								<span class="text-xl text-red-600">💻</span>
 							</div>
 							<h3 class="text-xl font-semibold">Learn</h3>
 						</div>
@@ -472,8 +331,8 @@
 					</div>
 					<div class="rounded-lg border-none shadow-lg">
 						<div class="p-6 pb-2">
-							<div class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100">
-								<span class="text-xl text-blue-600">🛠️</span>
+							<div class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-red-100">
+								<span class="text-xl text-red-600">🛠️</span>
 							</div>
 							<h3 class="text-xl font-semibold">Build</h3>
 						</div>
@@ -485,8 +344,8 @@
 					</div>
 					<div class="rounded-lg border-none shadow-lg">
 						<div class="p-6 pb-2">
-							<div class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100">
-								<span class="text-xl text-blue-600">👥</span>
+							<div class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-red-100">
+								<span class="text-xl text-red-600">👥</span>
 							</div>
 							<h3 class="text-xl font-semibold">Connect</h3>
 						</div>
@@ -495,6 +354,168 @@
 								Join our community to get feedback, collaborate, and grow with other learners
 							</p>
 						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Features Section -->
+		<section class="bg-slate-50 py-20">
+			<div class="container mx-auto px-4 md:px-6">
+				<div class="mb-12 flex flex-col items-center justify-center space-y-4 text-center">
+					<span class="rounded-full bg-slate-200 px-3 py-1 text-sm text-slate-800"
+						>Platform Features</span
+					>
+					<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+						Why Choose Verinzo
+					</h2>
+					<p class="max-w-[700px] text-gray-500 md:text-xl">
+						Our platform is designed to provide you with the best learning experience
+					</p>
+				</div>
+				<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+					{#each features as feature, i}
+						<div
+							class="group relative overflow-hidden rounded-xl bg-white p-1 transition-all hover:-translate-y-1 hover:shadow-xl"
+						>
+							<div
+								class="absolute inset-0 rounded-xl bg-gradient-to-r from-red-500 to-red-300 opacity-0 transition-opacity group-hover:opacity-100"
+							></div>
+							<div class="relative z-10 rounded-lg bg-white p-6">
+								<div class="mb-4 inline-block rounded-full bg-red-50 p-3 text-3xl">
+									{feature.icon}
+								</div>
+								<h3 class="mb-3 text-xl font-semibold transition-colors group-hover:text-red-600">
+									{feature.title}
+								</h3>
+								<p class="mb-4 text-sm text-gray-500">{feature.description}</p>
+								<div class="mt-4 border-t border-gray-100 pt-4">
+									<p class="text-sm text-gray-500">{feature.content}</p>
+								</div>
+							</div>
+						</div>
+					{/each}
+				</div>
+			</div>
+		</section>
+
+		<!-- Learning Paths Section -->
+		<section class="bg-slate-900 py-24 text-white">
+			<div class="container mx-auto px-4 md:px-6">
+				<div class="mb-16 flex flex-col items-center justify-center space-y-4 text-center">
+					<span class="rounded-full bg-red-600/20 px-3 py-1 text-sm text-red-300">Career Paths</span
+					>
+					<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+						Choose Your Learning Path
+					</h2>
+					<p class="max-w-[700px] text-slate-300 md:text-xl">
+						Structured learning paths to take you from beginner to professional developer
+					</p>
+				</div>
+				<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+					{#each courses as course}
+						<div
+							class="group relative flex flex-col overflow-hidden rounded-2xl border border-slate-800 bg-slate-800/50 backdrop-blur-sm transition-all hover:border-red-500/50 hover:bg-slate-800"
+						>
+							<div
+								class="absolute inset-0 bg-gradient-to-br from-red-500/10 to-transparent opacity-0 group-hover:opacity-100"
+							></div>
+							<div class="relative flex-grow p-6">
+								<div
+									class="mb-6 inline-flex items-center justify-center rounded-lg bg-slate-700/50 p-3 text-4xl backdrop-blur-sm"
+								>
+									{course.icon}
+								</div>
+								<h3 class="mb-2 text-2xl font-semibold text-white group-hover:text-red-300">
+									{course.title}
+								</h3>
+								<p class="mb-6 text-slate-300">{course.description}</p>
+								<div class="mb-6 flex flex-wrap gap-3">
+									<div
+										class="flex items-center gap-1 rounded-full bg-slate-700/50 px-3 py-1 text-sm text-slate-300"
+									>
+										<span class="text-red-400">📚</span>
+										<span>{course.lessons} lessons</span>
+									</div>
+									<div
+										class="flex items-center gap-1 rounded-full bg-slate-700/50 px-3 py-1 text-sm text-slate-300"
+									>
+										<span class="text-red-400">⏱️</span>
+										<span>{course.duration}</span>
+									</div>
+									<span
+										class="inline-block rounded-full px-3 py-1 text-sm font-medium
+										{course.level === 'Beginner'
+											? 'bg-green-900/30 text-green-300'
+											: course.level === 'Intermediate'
+												? 'bg-red-900/30 text-red-300'
+												: 'bg-purple-900/30 text-purple-300'}"
+									>
+										{course.level}
+									</span>
+								</div>
+							</div>
+							<div class="relative mt-auto p-6 pt-0">
+								<a
+									href={`/courses/${course.title.toLowerCase().replace(/\s+/g, '-')}`}
+									class="inline-block w-full rounded-lg border border-slate-700 bg-slate-700/50 py-3 text-center transition-colors hover:border-red-500 hover:bg-red-600"
+								>
+									Explore Path
+								</a>
+							</div>
+						</div>
+					{/each}
+				</div>
+				<div class="mt-16 flex justify-center">
+					<a
+						href="/courses"
+						class="group relative overflow-hidden rounded-full bg-slate-800 px-8 py-4 text-center font-medium text-white transition-colors hover:bg-slate-700"
+					>
+						<span class="relative z-10">View All Learning Paths</span>
+						<span
+							class="absolute inset-0 -translate-y-full bg-gradient-to-r from-red-600 to-red-400 transition-transform group-hover:translate-y-0"
+						></span>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Stats Section -->
+		<section class="border-t border-slate-800 bg-slate-800 py-16 text-white">
+			<div class="container mx-auto px-4 md:px-6">
+				<div class="mb-12 flex flex-col items-center justify-center space-y-4 text-center">
+					<span class="rounded-full bg-red-600/30 px-3 py-1 text-sm text-red-300">Our Impact</span>
+					<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+						Join Our Growing Community
+					</h2>
+					<p class="max-w-[700px] text-slate-300 md:text-xl">
+						Thousands of students have launched their tech careers with Verinzo
+					</p>
+				</div>
+				<div class="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-8">
+					<div
+						class="flex flex-col items-center justify-center rounded-lg border border-slate-700 bg-slate-800 p-6 text-center transition-transform hover:-translate-y-1 hover:border-red-500/30"
+					>
+						<div class="mb-2 text-4xl font-bold text-red-500 md:text-5xl">50K+</div>
+						<p class="text-slate-300">Active Students</p>
+					</div>
+					<div
+						class="flex flex-col items-center justify-center rounded-lg border border-slate-700 bg-slate-800 p-6 text-center transition-transform hover:-translate-y-1 hover:border-red-500/30"
+					>
+						<div class="mb-2 text-4xl font-bold text-red-500 md:text-5xl">200+</div>
+						<p class="text-slate-300">Coding Projects</p>
+					</div>
+					<div
+						class="flex flex-col items-center justify-center rounded-lg border border-slate-700 bg-slate-800 p-6 text-center transition-transform hover:-translate-y-1 hover:border-red-500/30"
+					>
+						<div class="mb-2 text-4xl font-bold text-red-500 md:text-5xl">95%</div>
+						<p class="text-slate-300">Completion Rate</p>
+					</div>
+					<div
+						class="flex flex-col items-center justify-center rounded-lg border border-slate-700 bg-slate-800 p-6 text-center transition-transform hover:-translate-y-1 hover:border-red-500/30"
+					>
+						<div class="mb-2 text-4xl font-bold text-red-500 md:text-5xl">12K+</div>
+						<p class="text-slate-300">Career Transitions</p>
 					</div>
 				</div>
 			</div>
@@ -518,7 +539,7 @@
 							<div class="p-6">
 								<div class="mb-4 flex gap-1">
 									{#each Array(5) as _, i}
-										<span class={i < testimonial.rating ? 'text-yellow-500' : 'text-gray-300'}>
+										<span class={i < testimonial.rating ? 'text-red-500' : 'text-gray-300'}>
 											{i < testimonial.rating ? '★' : '☆'}
 										</span>
 									{/each}
@@ -547,21 +568,21 @@
 		</section>
 
 		<!-- CTA Section -->
-		<section class="bg-blue-600 py-20 text-white">
+		<section class="bg-red-600 py-20 text-white">
 			<div class="container mx-auto px-4 md:px-6">
 				<div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
 					<div>
 						<h2 class="mb-4 text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
 							Start Your Coding Journey Today
 						</h2>
-						<p class="mb-6 max-w-[600px] text-blue-100 md:text-xl">
+						<p class="mb-6 max-w-[600px] text-red-100 md:text-xl">
 							Join thousands of students who have successfully launched their tech careers with
 							Verinzo's project-based curriculum.
 						</p>
 						<div class="flex flex-col gap-4 sm:flex-row">
 							<a
 								href="/signup"
-								class="rounded-full bg-white px-6 py-3 text-center font-medium text-blue-600 transition-colors hover:bg-blue-50"
+								class="rounded-full bg-white px-6 py-3 text-center font-medium text-red-600 transition-colors hover:bg-red-50"
 							>
 								Get Started for Free
 							</a>
@@ -592,7 +613,7 @@
 				<div class="md:col-span-1">
 					<a href="/" class="mb-6 inline-block">
 						<span
-							class="bg-gradient-to-r from-blue-500 to-blue-300 bg-clip-text text-2xl font-bold text-transparent"
+							class="bg-gradient-to-r from-red-500 to-red-300 bg-clip-text text-2xl font-bold text-transparent"
 						>
 							Verinzo
 						</span>
@@ -603,35 +624,35 @@
 					<div class="flex gap-4">
 						<a
 							href="#"
-							class="rounded-full p-2 text-slate-400 hover:bg-slate-900 hover:text-blue-500"
+							class="rounded-full p-2 text-slate-400 hover:bg-slate-900 hover:text-red-500"
 						>
 							<span class="text-xl">𝕏</span>
 							<span class="sr-only">Twitter</span>
 						</a>
 						<a
 							href="#"
-							class="rounded-full p-2 text-slate-400 hover:bg-slate-900 hover:text-blue-500"
+							class="rounded-full p-2 text-slate-400 hover:bg-slate-900 hover:text-red-500"
 						>
 							<span class="text-xl">🐙</span>
 							<span class="sr-only">GitHub</span>
 						</a>
 						<a
 							href="#"
-							class="rounded-full p-2 text-slate-400 hover:bg-slate-900 hover:text-blue-500"
+							class="rounded-full p-2 text-slate-400 hover:bg-slate-900 hover:text-red-500"
 						>
 							<span class="text-xl">🔗</span>
 							<span class="sr-only">LinkedIn</span>
 						</a>
 						<a
 							href="#"
-							class="rounded-full p-2 text-slate-400 hover:bg-slate-900 hover:text-blue-500"
+							class="rounded-full p-2 text-slate-400 hover:bg-slate-900 hover:text-red-500"
 						>
 							<span class="text-xl">📘</span>
 							<span class="sr-only">Facebook</span>
 						</a>
 						<a
 							href="#"
-							class="rounded-full p-2 text-slate-400 hover:bg-slate-900 hover:text-blue-500"
+							class="rounded-full p-2 text-slate-400 hover:bg-slate-900 hover:text-red-500"
 						>
 							<span class="text-xl">📷</span>
 							<span class="sr-only">Instagram</span>
@@ -642,22 +663,22 @@
 					<h3 class="mb-4 text-lg font-medium">Learn</h3>
 					<ul class="space-y-3">
 						<li>
-							<a href="/courses" class="text-slate-400 transition-colors hover:text-blue-500">
+							<a href="/courses" class="text-slate-400 transition-colors hover:text-red-500">
 								Courses
 							</a>
 						</li>
 						<li>
-							<a href="/curriculum" class="text-slate-400 transition-colors hover:text-blue-500">
+							<a href="/curriculum" class="text-slate-400 transition-colors hover:text-red-500">
 								Curriculum
 							</a>
 						</li>
 						<li>
-							<a href="/projects" class="text-slate-400 transition-colors hover:text-blue-500">
+							<a href="/projects" class="text-slate-400 transition-colors hover:text-red-500">
 								Projects
 							</a>
 						</li>
 						<li>
-							<a href="/tutorials" class="text-slate-400 transition-colors hover:text-blue-500">
+							<a href="/tutorials" class="text-slate-400 transition-colors hover:text-red-500">
 								Tutorials
 							</a>
 						</li>
@@ -667,22 +688,22 @@
 					<h3 class="mb-4 text-lg font-medium">Community</h3>
 					<ul class="space-y-3">
 						<li>
-							<a href="/discord" class="text-slate-400 transition-colors hover:text-blue-500">
+							<a href="/discord" class="text-slate-400 transition-colors hover:text-red-500">
 								Discord
 							</a>
 						</li>
 						<li>
-							<a href="/events" class="text-slate-400 transition-colors hover:text-blue-500">
+							<a href="/events" class="text-slate-400 transition-colors hover:text-red-500">
 								Events
 							</a>
 						</li>
 						<li>
-							<a href="/forum" class="text-slate-400 transition-colors hover:text-blue-500">
+							<a href="/forum" class="text-slate-400 transition-colors hover:text-red-500">
 								Forum
 							</a>
 						</li>
 						<li>
-							<a href="/contribute" class="text-slate-400 transition-colors hover:text-blue-500">
+							<a href="/contribute" class="text-slate-400 transition-colors hover:text-red-500">
 								Contribute
 							</a>
 						</li>
@@ -697,11 +718,11 @@
 						<input
 							type="email"
 							placeholder="Your email address"
-							class="w-full rounded-md border border-slate-800 bg-slate-900 px-4 py-2 text-white focus:ring-2 focus:ring-blue-500 focus:outline-none"
+							class="w-full rounded-md border border-slate-800 bg-slate-900 px-4 py-2 text-white focus:ring-2 focus:ring-red-500 focus:outline-none"
 						/>
 						<button
 							type="submit"
-							class="w-full rounded-md bg-blue-600 px-4 py-2 text-white transition-colors hover:bg-blue-700"
+							class="w-full rounded-md bg-red-600 px-4 py-2 text-white transition-colors hover:bg-red-700"
 						>
 							Subscribe
 						</button>
@@ -715,13 +736,13 @@
 					&copy; {new Date().getFullYear()} Verinzo. All rights reserved.
 				</p>
 				<div class="mt-4 flex gap-6 md:mt-0">
-					<a href="/privacy" class="text-sm text-slate-400 transition-colors hover:text-blue-500">
+					<a href="/privacy" class="text-sm text-slate-400 transition-colors hover:text-red-500">
 						Privacy Policy
 					</a>
-					<a href="/terms" class="text-sm text-slate-400 transition-colors hover:text-blue-500">
+					<a href="/terms" class="text-sm text-slate-400 transition-colors hover:text-red-500">
 						Terms of Service
 					</a>
-					<a href="/cookies" class="text-sm text-slate-400 transition-colors hover:text-blue-500">
+					<a href="/cookies" class="text-sm text-slate-400 transition-colors hover:text-red-500">
 						Cookie Policy
 					</a>
 				</div>
