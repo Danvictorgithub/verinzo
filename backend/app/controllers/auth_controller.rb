@@ -5,10 +5,10 @@ class AuthController < ApplicationController
   end
 
   def include_image
+    user_data = current_user.as_json
     if current_user.image.attached?
-      render json: { user: current_user, image: url_for(current_user.image) }
-    else
-      render json: { user: current_user }
+      user_data['image'] = current_user.image.supabase_public_url
     end
+    render json: { user: user_data }
   end
 end
